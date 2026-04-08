@@ -13,7 +13,7 @@ Equxi Vault is a decentralized smart contract utilizing a custom Program Derived
 ## 🏆 Hackathon Deliverables
 
 
-* 🎥 **Demo & Pitch Video:** [INSERT_YOUR_YOUTUBE_LINK_HERE]
+* 🎥 **Demo & Pitch Video:** [Watch on Youtube](https://youtu.be/jU5MHPjIvcc)
 
 * 📄 **Strategy & Risk Document:** [Read the full thesis here](./STRATEGY.md)
 
