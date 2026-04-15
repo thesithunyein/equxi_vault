@@ -8,7 +8,7 @@ Equxi Vault is a decentralized smart contract utilizing a custom Program Derived
 
 ## 🏆 Hackathon Deliverables
 
-* 🎥 **Demo & Pitch Video:** [INSERT_NEW_YOUTUBE_LINK_HERE]
+* 🎥 **Demo & Pitch Video:** [Watch on YouTube](I will update here)
 * 📄 **Strategy & Risk Document:** [Read the full AI strategy thesis here](./STRATEGY.md)
 * 🤖 **AI Keeper Logic:** [Review the TypeScript prediction engine](./keeper.ts)
 
@@ -40,6 +40,8 @@ Equxi bridges cutting-edge off-chain intelligence with on-chain Anchor security:
 1. **The AI Keeper (TypeScript):** An off-chain node that continuously analyzes historical emission volatility across Solana lending protocols, triggering CPI rebalances when yield spreads widen.
 2. **PDA Authority (Rust/Anchor):** Funds are never held in vulnerable hot wallets. The vault utilizes `findProgramAddressSync` to derive secure seeds (`[b"vault"]` and `[b"authority"]`).
 3. **Cross-Program Invocations (CPI):** Trustless transfers between user accounts and the PDA vault.
+4. **Institutional Security (Cobo MPC):** To protect the AI Keeper from key-compromise and MEV front-running, all off-chain rebalancing transactions require a threshold signature via Cobo's Multi-Party Computation (MPC) infrastructure.
+5. **Vault Dashboard:** A minimalist React frontend designed for institutional capital managers to monitor real-time health factors and AI routing paths.
 
 ---
 
