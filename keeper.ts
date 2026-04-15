@@ -1,5 +1,6 @@
 import { Connection, PublicKey } from "@solana/web3.js";
 import { Program } from "@coral-xyz/anchor";
+
 // 🛡️ Equxi AI Keeper - Powered by Cobo MPC Infrastructure
 // Utilizes Multi-Party Computation to ensure rebalancing transactions 
 // are mathematically secure and front-running resistant.
@@ -24,4 +25,8 @@ async function analyzeAndRoute() {
     }
 }
 
+// 🔥 THIS IS THE FIX: Call it immediately so it prints to your terminal right now!
+analyzeAndRoute();
+
+// Then keep it looping every hour in the background
 setInterval(analyzeAndRoute, 60 * 60 * 1000);
